@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PWII - Calculadora</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    <body>
+
+
+        <section class="content">
+            
+            <section class="nav">
+                <h1>Pablo Lemes da Silva</h1>
+            </section>
+            
+            <section class="conteudo">
+                <section class="conteudo part1">
+                    <div action="#" class="calculadora">
+                        
+                        <h1>Calculadora</h1>
+
+                            Primeiro Número<br />
+                            <input id="n1" type="number" />
+                            <br>
+
+                            Segundo Número<br />
+                            <input id="n2" type="number" />
+                            <br>
+                            
+
+                            <button onclick="somar()"  name="so">+</button>
+                            <button onclick="subtrair()"  name="su">-</button>
+                            <button onclick="multiplicar()"  name="m">*</button>
+                            <button onclick="dividir()"  name="d">/</button>
+
+                            <h5>O Resultado é:</h5> <span></span>
+
+                            <script>
+                                var n1 = document.getElementById('n1')
+                                var n2 = document.getElementById('n2')
+                                var resultado = document.querySelector('span')
+
+                                function somar() {
+                                    resultado.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+                                    document.getElementById('pri').innerHTML = "Monster hunter rise"}
+
+                                    function subtrair() {
+                                        resultado.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+                                        document.getElementById('se').innerHTML = "Monster Hunter Rise é um jogo eletrônico de RPG de ação desenvolvido e publicado pela Capcom. É o sexto título da série principal da franquia Monster Hunter depois de Monster Hunter: World e foi lançado mundialmente em 26 de março de 2021 para Nintendo Switch."}
+
+                                        function multiplicar() {
+                                            resultado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+                                            document.getElementById('ter').src="./img/tu.jpg"}
+
+                                            function dividir() {
+                                                resultado.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+                                                document.getElementById('pri').innerHTML = "Monster hunter rise"
+                                                document.getElementById('se').innerHTML = "Monster Hunter Rise é um jogo eletrônico de RPG de ação desenvolvido e publicado pela Capcom. É o sexto título da série principal da franquia Monster Hunter depois de Monster Hunter: World e foi lançado mundialmente em 26 de março de 2021 para Nintendo Switch."
+                                                document.getElementById('ter').src="./img/tu.jpg"
+                                            }
+                            </script>
+                            
+                        
+                    </div>
+                </section>
+
+                <section class="conteudo part2">
+                    <h1 id="pri">Monster Hunter</h1>
+                    <br>
+                    <div id="se">A franquia Monster Hunter é uma série de jogos de fantasia desenvolvida e publicada pela Capcom, que se iniciou com o jogo de mesmo nome para Playstation 2.</div>
+                    <br>
+                    <img id="ter" src="img/te.jpg" alt="">
+                    
+                </section>
+            </section>
+        </section>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
